@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { elements } from './assets/chemical-elements';
 
 @Component({
   selector: 'mta-periodic-table',
@@ -6,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class MtaPeriodicTableComponent implements OnInit {
+  e = elements;
 
-  constructor() { }
+  constructor(
+  ) { }
 
   ngOnInit() {
   }

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ElementConfig } from './interface';
 
 @Component({
   selector: 'mta-chemical-element',
@@ -6,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styles: []
 })
 export class MtaChemicalElementComponent implements OnInit {
-  @Input() symbol: string;
+  @Input() element: ElementConfig;
   @Input() group: string;
 
   constructor() { }
