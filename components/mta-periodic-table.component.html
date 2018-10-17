@@ -46,7 +46,7 @@
     </div>
   </div>
   <div class="middle-box">
-    <!-- <mta-chemical-element-page temperature-indicator="[[temperatureIndicator]]" language="[[language]]" [element]="e.[[selectedElementSymbol]]"></mta-chemical-element-page> -->
+    <mta-chemical-element-detail [element]="service.currentElement"></mta-chemical-element-detail>
   </div>
   <div class="right-box">
     <div class="container">
@@ -344,7 +344,6 @@
   <div class="item"></div>
 
   <!--
-
   <div class="item"><mta-chemical-element [element]="e.rf"></mta-chemical-element></div>
   <div class="item"><mta-chemical-element [element]="e.db"></mta-chemical-element></div>
   <div class="item"><mta-chemical-element [element]="e.sg"></mta-chemical-element></div>

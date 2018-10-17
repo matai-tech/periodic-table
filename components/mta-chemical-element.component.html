@@ -1,6 +1,7 @@
-<div
-  id="div"
-  class="element-card" [ngClass]="element.group"
+<div 
+  class="element-card"
+  [class.active]="isSelected()"
+  [ngClass]="element.group"
 >
-  {{ element.name }}
+  {{ element.symbol }}
 </div>

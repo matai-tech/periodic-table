@@ -1,4 +1,4 @@
-export interface ElementConfig {
+export interface ChemicalElement {
   symbol: string;
   name: string;
   group: string;

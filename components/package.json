@@ -1,0 +1,25 @@
+{
+  "name": "periodic-table",
+  "version": "0.1.0",
+  "description": "a periodic-table component by angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matai-tech/periodic-table.git"
+  },
+  "author": "wenqi73",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matai-tech/periodic-table/issues"
+  },
+  "homepage": "https://github.com/matai-tech/periodic-table#readme",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0",
+    "@angular/core": "^6.0.0",
+    "tslib": "^1.9.0",
+    "typescript": "~2.9.2"
+  }
+}

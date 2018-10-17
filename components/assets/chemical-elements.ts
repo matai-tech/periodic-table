@@ -27,8 +27,6 @@ export const elements = {
     'melting-point': 0.95,
     'boiling-point': 4.222
   },
-
-
   'li':
   {
     'symbol': 'Li',
