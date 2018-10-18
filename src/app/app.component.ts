@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MtaPeriodicTableService } from 'components/mta-periodic-table.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'periodic-table';
+
+  constructor(public service: MtaPeriodicTableService) {
+  }
 }
