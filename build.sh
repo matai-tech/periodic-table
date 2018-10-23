@@ -40,3 +40,6 @@ echo 'Cleaning up temporary files'
 # rm -rf __gen_components
 rm -rf publish/src/*.js
 rm -rf publish/src/**/*.js
+
+echo 'Copying README.md'
+cp README.md publish/README.md
