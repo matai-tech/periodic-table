@@ -41,5 +41,8 @@ echo 'Cleaning up temporary files'
 rm -rf publish/src/*.js
 rm -rf publish/src/**/*.js
 
+echo 'Copying package.json'
+cp components/package.json publish/package.json
+
 echo 'Copying README.md'
 cp README.md publish/README.md
