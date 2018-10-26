@@ -5,9 +5,12 @@
 /tmp
 /out-tsc
 /publish
+integration/**/lib/
 
 # dependencies
-/node_modules
+node_modules
+node_modules.*/
+integration/**/package-lock.json
 
 # IDEs and editors
 /.idea

@@ -1,5 +1,5 @@
 {
-  "name": "periodic-table",
+  "name": "mta-periodic-table",
   "version": "0.1.0",
   "description": "a periodic-table component by angular",
   "scripts": {
