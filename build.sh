@@ -1,12 +1,16 @@
 readonly currentDir=$(cd $(dirname $0); pwd)
 cd ${currentDir}
 rm -rf publish
+rm -rf __gen_components
 rm -rf publish-es2015
 rm -rf publish-es5
+cp -r components __gen_components
+node ./scripts/inline-template.js
 
-# VERSION=$(node -p "require('./package.json').version")
+VERSION=$(node -p "require('./package.json').version")
 
-# echo "Package Version: ${VERSION}"
+echo "Package Version: ${VERSION}"
+# 0.0.0-PLACEHOLDER 替换成 VERSION
 # perl -p -i -e "s/0\.0\.0\-PLACEHOLDER/${VERSION}/g" $(grep -ril 0\.0\.0\-PLACEHOLDER __gen_components) < /dev/null 2> /dev/null
 
 echo 'Compiling to es2015 via Angular compiler'
@@ -37,7 +41,7 @@ mv publish-es2015/esm2015 publish/esm2015
 rm -rf publish-es2015
 
 echo 'Cleaning up temporary files'
-# rm -rf __gen_components
+rm -rf __gen_components
 rm -rf publish/src/*.js
 rm -rf publish/src/**/*.js
 

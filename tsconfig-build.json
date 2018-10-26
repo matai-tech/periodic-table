@@ -13,7 +13,7 @@
     ]
   },
   "files": [
-    "./components/mta-periodic-table.module.ts"
+    "./__gen_components/mta-periodic-table.module.ts"
   ],
   "angularCompilerOptions": {
     "annotateForClosureCompiler": true,

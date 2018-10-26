@@ -2,13 +2,13 @@
   "name": "periodic-table",
   "version": "0.0.0",
   "scripts": {
+    "build": "ng build",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --pkg components/package.json",
+    "e2e": "ng e2e",
+    "lint": "ng lint",
     "ng": "ng",
     "start": "ng serve --port 4202",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --pkg components/package.json"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
