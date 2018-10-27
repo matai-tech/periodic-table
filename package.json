@@ -5,6 +5,7 @@
     "build": "ng build",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --pkg components/package.json",
     "e2e": "ng e2e",
+    "integration-cli": "cd integration/angular-cli && npm run preintegration && npm run start",
     "lint": "ng lint",
     "ng": "ng",
     "start": "ng serve --port 4202",
