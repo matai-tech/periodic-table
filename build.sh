@@ -5,7 +5,7 @@ rm -rf __gen_components
 rm -rf publish-es2015
 rm -rf publish-es5
 cp -r components __gen_components
-node ./scripts/inline-template.js
+node ./scripts/inline-template-and-style.js
 
 VERSION=$(node -p "require('./package.json').version")
 
@@ -44,6 +44,11 @@ echo 'Cleaning up temporary files'
 rm -rf __gen_components
 rm -rf publish/src/*.js
 rm -rf publish/src/**/*.js
+
+echo 'Normalizing entry files'
+sed -e "s/from '.\//from '.\/src\//g" publish/src/index.d.ts > publish/index.d.ts
+sed -e "s/\":\".\//\":\".\/src\//g" publish/src/index.metadata.json > publish/index.metadata.json
+rm publish/src/index.d.ts publish/src/index.metadata.json
 
 echo 'Copying package.json'
 cp components/package.json publish/package.json

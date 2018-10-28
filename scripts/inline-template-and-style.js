@@ -9,6 +9,7 @@ function inlineResourcesForDirectory(folderPath) {
 function inlineResources(filePath) {
   let fileContent = fs.readFileSync(filePath, 'utf-8')
   fileContent = inlineTemplate(fileContent, filePath)
+  fileContent = inlineStyle(fileContent, filePath)
   fs.writeFileSync(filePath, fileContent, 'utf-8')
 }
 
@@ -17,6 +18,19 @@ function inlineTemplate(fileContent, filePath) {
     const templatePath = path.join(path.dirname(filePath), templateUrl)
     const templateContent = loadResourceFile(templatePath)
     return `template: \`${templateContent}\``
+  })
+}
+
+// useless now
+function inlineStyle(fileContent, filePath) {
+  return fileContent.replace(/styleUrls\s*:\s*\[(.+)\]/g, (_match, templateUrl) => {
+    let styleContent = ''
+    const styleList = templateUrl.replace(/'|\s/g, '').split(',')
+    styleList.forEach(s => {
+      const stylePath = path.join(path.dirname(filePath), s)
+      styleContent += loadResourceFile(stylePath)
+    })
+    return `styles: \[\`${styleContent}\`\]`
   })
 }
 
