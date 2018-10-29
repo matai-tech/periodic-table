@@ -2,6 +2,8 @@
 
 UI is from [https://github.com/FlorianFe/Elements](https://github.com/FlorianFe/Elements)
 
+<img src="https://github.com/matai-tech/periodic-table/blob/master/components/assets/view.gif" alt="view">
+
 ## Quick start
 
 ```shell
@@ -30,7 +32,7 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 ```
 
-
 ```html
 <mta-periodic-table></mta-periodic-table>
 ```
+See [details](https://github.com/matai-tech/periodic-table/blob/master/integration/angular-cli/src/app/app.component.ts)
