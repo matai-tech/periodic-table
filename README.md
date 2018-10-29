@@ -2,6 +2,8 @@
 
 UI is from [https://github.com/FlorianFe/Elements](https://github.com/FlorianFe/Elements)
 
+Dev environment is from [ng-zorro-antd](https://github.com/NG-ZORRO/ng-zorro-antd)
+
 <img src="https://github.com/matai-tech/periodic-table/blob/master/components/assets/view.gif" alt="view">
 
 ## Quick start
