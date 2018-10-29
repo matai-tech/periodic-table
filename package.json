@@ -1,6 +1,6 @@
 {
   "name": "periodic-table",
-  "version": "0.0.0",
+  "version": "0.0.0-NotUsed",
   "scripts": {
     "build": "ng build",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --pkg components/package.json",
