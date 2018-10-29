@@ -1,10 +1,10 @@
 import { Component, HostListener, Input, OnInit } from '@angular/core';
-import { ChemicalElement } from './interface';
-import { MtaPeriodicTableService } from './mta-periodic-table.service';
+import { ChemicalElement } from '../interface';
+import { MtaPeriodicTableService } from '../periodic-table.service';
 
 @Component({
   selector: 'mta-chemical-element',
-  templateUrl: './mta-chemical-element.component.html',
+  templateUrl: './chemical-element.component.html',
   styles: [`
   :host {
     --alkali-metal-primary-color: #ff8a65;
@@ -38,6 +38,7 @@ import { MtaPeriodicTableService } from './mta-periodic-table.service';
     color: white;
     text-align: center;
     cursor: pointer;
+    box-sizing: border-box;
     border: 1px solid transparent;
     border-radius: 2px;
     transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);

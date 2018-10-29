@@ -1,13 +1,13 @@
 import { Component, OnInit, HostListener, Output, EventEmitter, OnDestroy } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { elements } from './assets/chemical-elements';
-import { MtaPeriodicTableService } from './mta-periodic-table.service';
+import { MtaPeriodicTableService } from './periodic-table.service';
 import { Subscription } from 'rxjs';
 import { ChemicalElement } from './interface';
 
 @Component({
   selector: 'mta-periodic-table',
-  templateUrl: './mta-periodic-table.component.html',
+  templateUrl: './periodic-table.component.html',
   styles: [`
   .container {
     display: flex;

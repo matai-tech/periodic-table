@@ -13,13 +13,13 @@
     ]
   },
   "files": [
-    "./__gen_components/mta-periodic-table.module.ts"
+    "./__gen_components/periodic-table.module.ts"
   ],
   "angularCompilerOptions": {
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
     "flatModuleOutFile": "index.js",
-    "flatModuleId": "mta-periodic-table.",
+    "flatModuleId": "mta-periodic-table",
     "skipTemplateCodegen": true
   }
 }

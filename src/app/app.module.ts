@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MtaPeriodicTableModule } from 'components/mta-periodic-table.module';
+import { MtaPeriodicTableModule } from 'components/periodic-table.module';
 
 @NgModule({
   declarations: [
