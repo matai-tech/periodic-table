@@ -38,3 +38,13 @@ export class AppModule { }
 <mta-periodic-table></mta-periodic-table>
 ```
 See [details](https://github.com/matai-tech/periodic-table/blob/master/integration/angular-cli/src/app/app.component.ts)
+
+## Development
+```shell
+# demo
+$ npm run start
+
+# build
+$ npm run integration-cli
+```
+
