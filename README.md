@@ -1,5 +1,9 @@
 # PeriodicTable
 
+![Travis (.com)](https://img.shields.io/travis/com/matai-tech/periodic-table.svg?style=popout-square)
+![GitHub](https://img.shields.io/github/license/matai-tech/periodic-table.svg?style=popout-square)
+![npm](https://img.shields.io/npm/v/mta-periodic-table.svg?style=popout-square)
+
 UI is from [https://github.com/FlorianFe/Elements](https://github.com/FlorianFe/Elements)
 
 Dev environment is from [ng-zorro-antd](https://github.com/NG-ZORRO/ng-zorro-antd)
@@ -41,10 +45,6 @@ See [details](https://github.com/matai-tech/periodic-table/blob/master/integrati
 
 ## Development
 ```shell
-# demo
 $ npm run start
-
-# build
-$ npm run integration-cli
 ```
 
