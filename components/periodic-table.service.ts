@@ -17,7 +17,7 @@ export class MtaPeriodicTableService {
   }
 
   change(e: ChemicalElement): void {
-    if (this.maxElLength < 0) {
+    if (this.maxElLength !== undefined && this.maxElLength < 0) {
       alert(`maxElLength请设置大于或等于0`);
       return;
     }
