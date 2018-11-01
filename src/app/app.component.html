@@ -1,4 +1,4 @@
-<mta-periodic-table></mta-periodic-table>
+<mta-periodic-table [isShowElDetail]="isShowElDetail" [maxSelect]="maxSelect" (elementChange)="aaa($event)"></mta-periodic-table>
 
 <div>
   {{ service.selectedElements | json }}
