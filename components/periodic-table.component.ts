@@ -49,12 +49,12 @@ export class MtaPeriodicTableComponent implements OnInit, OnDestroy {
     public service: MtaPeriodicTableService
   ) { }
 
-  @Output() elementChange: EventEmitter<string> = new EventEmitter();
+  @Output() elementChange: EventEmitter<object> = new EventEmitter();
 
   ngOnInit(): void {
     this.service.maxElLength = this.maxSelect;
     this.change$ = this.service.elementChange$.subscribe((e: ChemicalElement) => {
-      this.elementChange.emit(e.symbol);
+      this.elementChange.emit(e);
     });
   }
 

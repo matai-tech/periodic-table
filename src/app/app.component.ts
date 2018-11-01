@@ -9,8 +9,12 @@ import { MtaPeriodicTableService } from 'components/periodic-table.service';
 export class AppComponent {
   title = 'periodic-table';
   isShowElDetail = false;
-  maxSelect = -1;
+  maxSelect = 3;
 
   constructor(public service: MtaPeriodicTableService) {
+  }
+
+  aaa(e) {
+    console.log(e);
   }
 }
