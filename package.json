@@ -7,7 +7,7 @@
     "e2e": "ng e2e",
     "generate": "bash ./build.sh",
     "integration-cli": "npm run generate && cd integration/angular-cli && npm run integration",
-    "lint": "ng lint",
+    "lint": "tslint -c tslint.json 'components/*/*.ts'",
     "ng": "ng",
     "start": "ng serve --port 4202",
     "test": "ng test"
