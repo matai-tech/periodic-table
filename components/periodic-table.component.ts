@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, Output, EventEmitter, OnDestroy } from '@angular/core';
+import { Component, OnInit, HostListener, Input, Output, EventEmitter, OnDestroy } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { elements } from './assets/chemical-elements';
 import { MtaPeriodicTableService } from './periodic-table.service';
@@ -39,6 +39,9 @@ import { ChemicalElement } from './interface';
   `]
 })
 export class MtaPeriodicTableComponent implements OnInit, OnDestroy {
+  @Input() isShowElDetail: boolean = true;
+  @Input() maxSelect: number;
+
   e = elements;
   change$: Subscription;
 
@@ -49,6 +52,7 @@ export class MtaPeriodicTableComponent implements OnInit, OnDestroy {
   @Output() elementChange: EventEmitter<string> = new EventEmitter();
 
   ngOnInit(): void {
+    this.service.maxElLength = this.maxSelect;
     this.change$ = this.service.elementChange$.subscribe((e: ChemicalElement) => {
       this.elementChange.emit(e.symbol);
     });

@@ -33,6 +33,7 @@ import { Component, Input, OnInit } from '@angular/core';
   `]
 })
 export class MtaChemicalElementDetailComponent {
+  @Input() isShowElDetail: boolean;
   @Input() element;
 
   constructor() { }
