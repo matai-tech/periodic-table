@@ -1,5 +1,12 @@
-<a name="0.1.0"></a>
-# 0.1.0 (2018-10-29)
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/matai-tech/periodic-table/compare/v0.2.0...v0.3.0) (2018-11-01)
+
+### Features
+
+* add input params ([af203a5](https://github.com/matai-tech/periodic-table/commit/af203a5))
+
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/matai-tech/periodic-table/compare/7eaee79...v0.2.0) (2018-10-29)
 
 
 ### Bug Fixes
