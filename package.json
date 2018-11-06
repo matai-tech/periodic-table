@@ -10,6 +10,7 @@
     "lint": "tslint -c tslint.json 'components/*/*.ts'",
     "ng": "ng",
     "start": "ng serve --port 4202",
+    "release": "node ./scripts/publish.js",
     "test": "ng test"
   },
   "private": true,
