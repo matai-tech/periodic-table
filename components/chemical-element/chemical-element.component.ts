@@ -52,34 +52,34 @@ import { MtaPeriodicTableService } from '../periodic-table.service';
       0 2px 4px -1px rgba(0, 0, 0, 0.6);
   }
   .alkali-metal {
-    background-color: var(--alkali-metal-background-color);
+    background-color: #ffab91;
   }
   .alkaline-earth-metal {
-    background-color: var(--alkaline-earth-metal-background-color);
+    background-color: #ffcc80;
   }
   .transition-metal {
-    background-color: var(--transition-metal-background-color);
+    background-color: #ffe082;
   }
   .metalloid {
-    background-color: var(--metalloid-background-color);
+    background-color: #a5d6a7;
   }
   .post-transition-metal {
-    background-color: var(--post-transition-metal-background-color);
+    background-color: #c5e1a5;
   }
   .other-nonmetal {
-    background-color: var(--other-nonmetal-background-color);
+    background-color: #80cbc4;
   }
   .lanthanide {
-    background-color: var(--lanthanide-background-color);
+    background-color: #ce93d8;
   }
   .actinide {
-    background-color: var(--actinide-background-color);
+    background-color: #f48fb1;
   }
   .halogen {
-    background-color: var(--halogen-background-color);
+    background-color: #80deea;
   }
   .noble-gas {
-    background-color: var(--noble-gas-background-color);
+    background-color: #81d4fa;
   }
   .selected {
     box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
