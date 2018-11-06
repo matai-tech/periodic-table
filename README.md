@@ -45,6 +45,9 @@ See [details](https://github.com/matai-tech/periodic-table/blob/master/integrati
 
 ## Development
 ```shell
+$ git clone https://github.com/matai-tech/periodic-table.git
+$ cd periodic-table
+$ npm install
 $ npm run start
 ```
 
