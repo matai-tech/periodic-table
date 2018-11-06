@@ -22,18 +22,18 @@ export class MtaPeriodicTableService {
     }
     const symbol = e.symbol;
     const index = this.selectedElements.indexOf(e.symbol);
-    let message = '';
+    let messageErr = false;
     if (this.isSelected(e)) {
       this.selectedElements.splice(index, 1);
     } else {
       if (this.maxElLength !== undefined && this.selectedElements.length === this.maxElLength) {
-        message = `化学元素至多选择${this.maxElLength}个!`;
+        messageErr = true;
       } else {
         this.selectedElements.push(symbol);
         this.currentElement = e;
       }
     }
-    this.elementChange$.next(Object.assign({}, e, {msg: message}));
+    this.elementChange$.next(Object.assign({}, e, {messageErr}));
   }
 
   isSelected(e: ChemicalElement): boolean {
