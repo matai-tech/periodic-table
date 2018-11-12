@@ -1,8 +1,8 @@
 # PeriodicTable
 
-![Travis (.com)](https://img.shields.io/travis/com/matai-tech/periodic-table.svg?style=popout-square)
-![GitHub](https://img.shields.io/github/license/matai-tech/periodic-table.svg?style=popout-square)
-![npm](https://img.shields.io/npm/v/mta-periodic-table.svg?style=popout-square)
+[![Travis (.com)](https://img.shields.io/travis/com/matai-tech/periodic-table.svg?style=popout-square)](https://travis-ci.org/matai-tech/periodic-table)
+[![GitHub](https://img.shields.io/github/license/matai-tech/periodic-table.svg?style=popout-square)](https://github.com/matai-tech/periodic-table/blob/master/LICENSE)
+[![npm](https://img.shields.io/npm/v/mta-periodic-table.svg?style=popout-square)](https://www.npmjs.com/package/mta-periodic-table)
 
 UI is from [https://github.com/FlorianFe/Elements](https://github.com/FlorianFe/Elements)
 

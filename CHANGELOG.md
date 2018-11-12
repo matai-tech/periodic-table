@@ -1,3 +1,13 @@
+<a name="0.3.1"></a>
+## [0.3.1](https://github.com/matai-tech/periodic-table/compare/0.3.0...0.3.1) (2018-11-06)
+
+
+### Bug Fixes
+
+* output message error ([#5](https://github.com/matai-tech/periodic-table/issues/5)) ([91c3786](https://github.com/matai-tech/periodic-table/commit/91c3786))
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/matai-tech/periodic-table/compare/v0.2.0...v0.3.0) (2018-11-01)
 
