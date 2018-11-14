@@ -24,7 +24,12 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "chalk": "^2.4.1",
+    "child_process": "^1.0.2",
     "core-js": "^2.5.4",
+    "fs-extra": "^7.0.1",
+    "path": "^0.12.7",
+    "readline-sync": "^1.4.9",
     "rxjs": "~6.2.0",
     "zone.js": "~0.8.26"
   },
