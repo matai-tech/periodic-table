@@ -1,3 +1,12 @@
+## [0.3.2](https://github.com/matai-tech/periodic-table/compare/0.3.1...0.3.2) (2018-11-14)
+
+
+### Features
+
+* matching elements ([#7](https://github.com/matai-tech/periodic-table/issues/7)) ([a94aaa2](https://github.com/matai-tech/periodic-table/commit/a94aaa2))
+
+
+
 <a name="0.3.1"></a>
 ## [0.3.1](https://github.com/matai-tech/periodic-table/compare/0.3.0...0.3.1) (2018-11-06)
 
