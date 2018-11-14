@@ -7,10 +7,11 @@ import { ChemicalElement } from './interface';
 })
 export class MtaPeriodicTableService {
   // tslint:disable-next-line:no-any
-  selectedElements: any[] = [];
-  currentElement;
+  selectedElements: any[] = []; // 选择的元素池
+  currentElement; // 当前选中的元素
   elementChange$ = new Subject();
-  maxElLength: number;
+  maxElLength: number; // 最大可以选择元素的个数
+  canSelectElements: string[]; // 关联可以选择的元素string[],例['h', 'li', 'be']
 
   constructor() {
   }
@@ -26,11 +27,13 @@ export class MtaPeriodicTableService {
     if (this.isSelected(e)) {
       this.selectedElements.splice(index, 1);
     } else {
-      if (this.maxElLength !== undefined && this.selectedElements.length === this.maxElLength) {
-        messageErr = true;
-      } else {
-        this.selectedElements.push(symbol);
-        this.currentElement = e;
+      if (this.canSelectElements.indexOf(e.symbol.toLocaleLowerCase()) > -1) {
+        if (this.maxElLength !== undefined && this.selectedElements.length === this.maxElLength) {
+          messageErr = true;
+        } else {
+          this.selectedElements.push(symbol);
+          this.currentElement = e;
+        }
       }
     }
     this.elementChange$.next(Object.assign({}, e, {messageErr}));
@@ -42,5 +45,13 @@ export class MtaPeriodicTableService {
 
   reset(): void {
     this.selectedElements = [];
+  }
+
+  setMaxLength(maxSelect: number) {
+    this.maxElLength = maxSelect;
+  }
+
+  setCanSelectElements(elements: string[]) {
+    this.canSelectElements = elements;
   }
 }

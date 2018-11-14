@@ -28,7 +28,7 @@
   <div class="left-box">
     <div class="container">
       <div class="item">
-        <mta-chemical-element temperature-indicator="[[temperatureIndicator]]" language="[[language]]" [element]="e.h"></mta-chemical-element>
+        <mta-chemical-element temperature-indicator="[[temperatureIndicator]]" language="[[language]]" [element]="e.h" [isCanSelect]="canSelectElements.indexOf('h') < 0"></mta-chemical-element>
       </div>
       <div class="item">
         <div class="index">A II</div>
@@ -37,10 +37,10 @@
     </div>
     <div class="container">
       <div class="item">
-        <mta-chemical-element temperature-indicator="[[temperatureIndicator]]" language="[[language]]" [element]="e.li"></mta-chemical-element>
+        <mta-chemical-element temperature-indicator="[[temperatureIndicator]]" language="[[language]]" [element]="e.li" [isCanSelect]="canSelectElements.indexOf('li') < 0"></mta-chemical-element>
       </div>
       <div class="item">
-        <mta-chemical-element temperature-indicator="[[temperatureIndicator]]" language="[[language]]" [element]="e.be"></mta-chemical-element>
+        <mta-chemical-element temperature-indicator="[[temperatureIndicator]]" language="[[language]]" [element]="e.be" [isCanSelect]="canSelectElements.indexOf('be') < 0"></mta-chemical-element>
       </div>
       <div class="item"></div>
     </div>
@@ -67,38 +67,38 @@
         <div class="index">A VII</div>
       </div>
       <div class="item">
-        <mta-chemical-element [element]="e.he"></mta-chemical-element>
+        <mta-chemical-element [element]="e.he" [isCanSelect]="canSelectElements.indexOf('he') < 0"></mta-chemical-element>
       </div>
     </div>
     <div class="container">
       <div class="item"></div>
       <div class="item">
-        <mta-chemical-element [element]="e.b"></mta-chemical-element>
+        <mta-chemical-element [element]="e.b" [isCanSelect]="canSelectElements.indexOf('b') < 0"></mta-chemical-element>
       </div>
       <div class="item">
-        <mta-chemical-element [element]="e.c"></mta-chemical-element>
+        <mta-chemical-element [element]="e.c" [isCanSelect]="canSelectElements.indexOf('c') < 0"></mta-chemical-element>
       </div>
       <div class="item">
-        <mta-chemical-element [element]="e.n"></mta-chemical-element>
+        <mta-chemical-element [element]="e.n" [isCanSelect]="canSelectElements.indexOf('n') < 0"></mta-chemical-element>
       </div>
       <div class="item">
-        <mta-chemical-element [element]="e.o"></mta-chemical-element>
+        <mta-chemical-element [element]="e.o" [isCanSelect]="canSelectElements.indexOf('o') < 0"></mta-chemical-element>
       </div>
       <div class="item">
-        <mta-chemical-element [element]="e.f"></mta-chemical-element>
+        <mta-chemical-element [element]="e.f" [isCanSelect]="canSelectElements.indexOf('f') < 0"></mta-chemical-element>
       </div>
       <div class="item">
-        <mta-chemical-element [element]="e.ne"></mta-chemical-element>
+        <mta-chemical-element [element]="e.ne" [isCanSelect]="canSelectElements.indexOf('ne') < 0"></mta-chemical-element>
       </div>
     </div>
   </div>
 </div>
 <div class="container">
   <div class="item">
-    <mta-chemical-element [element]="e.na"></mta-chemical-element>
+    <mta-chemical-element [element]="e.na" [isCanSelect]="canSelectElements.indexOf('na') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.mg"></mta-chemical-element>
+    <mta-chemical-element [element]="e.mg" [isCanSelect]="canSelectElements.indexOf('mg') < 0"></mta-chemical-element>
   </div>
   <div class="item">
     <div class="index">B III</div>
@@ -131,198 +131,198 @@
     <div class="index">B II</div>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.al"></mta-chemical-element>
+    <mta-chemical-element [element]="e.al" [isCanSelect]="canSelectElements.indexOf('al') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.si"></mta-chemical-element>
+    <mta-chemical-element [element]="e.si" [isCanSelect]="canSelectElements.indexOf('si') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.p"></mta-chemical-element>
+    <mta-chemical-element [element]="e.p" [isCanSelect]="canSelectElements.indexOf('p') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.s"></mta-chemical-element>
+    <mta-chemical-element [element]="e.s" [isCanSelect]="canSelectElements.indexOf('s') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.cl"></mta-chemical-element>
+    <mta-chemical-element [element]="e.cl" [isCanSelect]="canSelectElements.indexOf('cl') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.ar"></mta-chemical-element>
-  </div>
-</div>
-<div class="container">
-  <div class="item">
-    <mta-chemical-element [element]="e.k"></mta-chemical-element>
-  </div>
-  <div class="item">
-    <mta-chemical-element [element]="e.ca"></mta-chemical-element>
-  </div>
-  <div class="item">
-    <mta-chemical-element [element]="e.sc"></mta-chemical-element>
-  </div>
-  <div class="item">
-    <mta-chemical-element [element]="e.ti"></mta-chemical-element>
-  </div>
-  <div class="item">
-    <mta-chemical-element [element]="e.v"></mta-chemical-element>
-  </div>
-  <div class="item">
-    <mta-chemical-element [element]="e.cr"></mta-chemical-element>
-  </div>
-  <div class="item">
-    <mta-chemical-element [element]="e.mn"></mta-chemical-element>
-  </div>
-  <div class="item">
-    <mta-chemical-element [element]="e.fe"></mta-chemical-element>
-  </div>
-  <div class="item">
-    <mta-chemical-element [element]="e.co"></mta-chemical-element>
-  </div>
-  <div class="item">
-    <mta-chemical-element [element]="e.ni"></mta-chemical-element>
-  </div>
-  <div class="item">
-    <mta-chemical-element [element]="e.cu"></mta-chemical-element>
-  </div>
-  <div class="item">
-    <mta-chemical-element [element]="e.zn"></mta-chemical-element>
-  </div>
-  <div class="item">
-    <mta-chemical-element [element]="e.ga"></mta-chemical-element>
-  </div>
-  <div class="item">
-    <mta-chemical-element [element]="e.ge"></mta-chemical-element>
-  </div>
-  <div class="item">
-    <mta-chemical-element [element]="e.as"></mta-chemical-element>
-  </div>
-  <div class="item">
-    <mta-chemical-element [element]="e.se"></mta-chemical-element>
-  </div>
-  <div class="item">
-    <mta-chemical-element [element]="e.br"></mta-chemical-element>
-  </div>
-  <div class="item">
-    <mta-chemical-element [element]="e.kr"></mta-chemical-element>
+    <mta-chemical-element [element]="e.ar" [isCanSelect]="canSelectElements.indexOf('ar') < 0"></mta-chemical-element>
   </div>
 </div>
 <div class="container">
   <div class="item">
-    <mta-chemical-element [element]="e.rb"></mta-chemical-element>
+    <mta-chemical-element [element]="e.k" [isCanSelect]="canSelectElements.indexOf('k') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.sr"></mta-chemical-element>
+    <mta-chemical-element [element]="e.ca" [isCanSelect]="canSelectElements.indexOf('ca') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.y"></mta-chemical-element>
+    <mta-chemical-element [element]="e.sc" [isCanSelect]="canSelectElements.indexOf('sc') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.zr"></mta-chemical-element>
+    <mta-chemical-element [element]="e.ti" [isCanSelect]="canSelectElements.indexOf('ti') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.nb"></mta-chemical-element>
+    <mta-chemical-element [element]="e.v" [isCanSelect]="canSelectElements.indexOf('v') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.mo"></mta-chemical-element>
+    <mta-chemical-element [element]="e.cr" [isCanSelect]="canSelectElements.indexOf('cr') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.tc"></mta-chemical-element>
+    <mta-chemical-element [element]="e.mn" [isCanSelect]="canSelectElements.indexOf('mn') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.ru"></mta-chemical-element>
+    <mta-chemical-element [element]="e.fe" [isCanSelect]="canSelectElements.indexOf('fe') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.rh"></mta-chemical-element>
+    <mta-chemical-element [element]="e.co" [isCanSelect]="canSelectElements.indexOf('co') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.pd"></mta-chemical-element>
+    <mta-chemical-element [element]="e.ni" [isCanSelect]="canSelectElements.indexOf('ni') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.ag"></mta-chemical-element>
+    <mta-chemical-element [element]="e.cu" [isCanSelect]="canSelectElements.indexOf('cu') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.cd"></mta-chemical-element>
+    <mta-chemical-element [element]="e.zn" [isCanSelect]="canSelectElements.indexOf('zn') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.in"></mta-chemical-element>
+    <mta-chemical-element [element]="e.ga" [isCanSelect]="canSelectElements.indexOf('ga') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.sn"></mta-chemical-element>
+    <mta-chemical-element [element]="e.ge" [isCanSelect]="canSelectElements.indexOf('ge') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.sb"></mta-chemical-element>
+    <mta-chemical-element [element]="e.as" [isCanSelect]="canSelectElements.indexOf('as') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.te"></mta-chemical-element>
+    <mta-chemical-element [element]="e.se" [isCanSelect]="canSelectElements.indexOf('se') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.i"></mta-chemical-element>
+    <mta-chemical-element [element]="e.br" [isCanSelect]="canSelectElements.indexOf('br') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.xe"></mta-chemical-element>
+    <mta-chemical-element [element]="e.kr" [isCanSelect]="canSelectElements.indexOf('kr') < 0"></mta-chemical-element>
   </div>
 </div>
 <div class="container">
   <div class="item">
-    <mta-chemical-element [element]="e.cs"></mta-chemical-element>
+    <mta-chemical-element [element]="e.rb" [isCanSelect]="canSelectElements.indexOf('rb') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.ba"></mta-chemical-element>
+    <mta-chemical-element [element]="e.sr" [isCanSelect]="canSelectElements.indexOf('sr') < 0"></mta-chemical-element>
+  </div>
+  <div class="item">
+    <mta-chemical-element [element]="e.y" [isCanSelect]="canSelectElements.indexOf('y') < 0"></mta-chemical-element>
+  </div>
+  <div class="item">
+    <mta-chemical-element [element]="e.zr" [isCanSelect]="canSelectElements.indexOf('zr') < 0"></mta-chemical-element>
+  </div>
+  <div class="item">
+    <mta-chemical-element [element]="e.nb" [isCanSelect]="canSelectElements.indexOf('nb') < 0"></mta-chemical-element>
+  </div>
+  <div class="item">
+    <mta-chemical-element [element]="e.mo" [isCanSelect]="canSelectElements.indexOf('mo') < 0"></mta-chemical-element>
+  </div>
+  <div class="item">
+    <mta-chemical-element [element]="e.tc" [isCanSelect]="canSelectElements.indexOf('tc') < 0"></mta-chemical-element>
+  </div>
+  <div class="item">
+    <mta-chemical-element [element]="e.ru" [isCanSelect]="canSelectElements.indexOf('ru') < 0"></mta-chemical-element>
+  </div>
+  <div class="item">
+    <mta-chemical-element [element]="e.rh" [isCanSelect]="canSelectElements.indexOf('rh') < 0"></mta-chemical-element>
+  </div>
+  <div class="item">
+    <mta-chemical-element [element]="e.pd" [isCanSelect]="canSelectElements.indexOf('pd') < 0"></mta-chemical-element>
+  </div>
+  <div class="item">
+    <mta-chemical-element [element]="e.ag" [isCanSelect]="canSelectElements.indexOf('ag') < 0"></mta-chemical-element>
+  </div>
+  <div class="item">
+    <mta-chemical-element [element]="e.cd" [isCanSelect]="canSelectElements.indexOf('cd') < 0"></mta-chemical-element>
+  </div>
+  <div class="item">
+    <mta-chemical-element [element]="e.in" [isCanSelect]="canSelectElements.indexOf('in') < 0"></mta-chemical-element>
+  </div>
+  <div class="item">
+    <mta-chemical-element [element]="e.sn" [isCanSelect]="canSelectElements.indexOf('sn') < 0"></mta-chemical-element>
+  </div>
+  <div class="item">
+    <mta-chemical-element [element]="e.sb" [isCanSelect]="canSelectElements.indexOf('sb') < 0"></mta-chemical-element>
+  </div>
+  <div class="item">
+    <mta-chemical-element [element]="e.te" [isCanSelect]="canSelectElements.indexOf('te') < 0"></mta-chemical-element>
+  </div>
+  <div class="item">
+    <mta-chemical-element [element]="e.i" [isCanSelect]="canSelectElements.indexOf('i') < 0"></mta-chemical-element>
+  </div>
+  <div class="item">
+    <mta-chemical-element [element]="e.xe" [isCanSelect]="canSelectElements.indexOf('xe') < 0"></mta-chemical-element>
+  </div>
+</div>
+<div class="container">
+  <div class="item">
+    <mta-chemical-element [element]="e.cs" [isCanSelect]="canSelectElements.indexOf('cs') < 0"></mta-chemical-element>
+  </div>
+  <div class="item">
+    <mta-chemical-element [element]="e.ba" [isCanSelect]="canSelectElements.indexOf('ba') < 0"></mta-chemical-element>
   </div>
   <div class="item">
     <!-- <paper-card class="lan­thanide">*</paper-card> -->
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.hf"></mta-chemical-element>
+    <mta-chemical-element [element]="e.hf" [isCanSelect]="canSelectElements.indexOf('hf') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.ta"></mta-chemical-element>
+    <mta-chemical-element [element]="e.ta" [isCanSelect]="canSelectElements.indexOf('ta') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.w"></mta-chemical-element>
+    <mta-chemical-element [element]="e.w" [isCanSelect]="canSelectElements.indexOf('w') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.re"></mta-chemical-element>
+    <mta-chemical-element [element]="e.re" [isCanSelect]="canSelectElements.indexOf('re') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.os"></mta-chemical-element>
+    <mta-chemical-element [element]="e.os" [isCanSelect]="canSelectElements.indexOf('os') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.ir"></mta-chemical-element>
+    <mta-chemical-element [element]="e.ir" [isCanSelect]="canSelectElements.indexOf('ir') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.pt"></mta-chemical-element>
+    <mta-chemical-element [element]="e.pt" [isCanSelect]="canSelectElements.indexOf('pt') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.au"></mta-chemical-element>
+    <mta-chemical-element [element]="e.au" [isCanSelect]="canSelectElements.indexOf('au') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.hg"></mta-chemical-element>
+    <mta-chemical-element [element]="e.hg" [isCanSelect]="canSelectElements.indexOf('hg') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.tl"></mta-chemical-element>
+    <mta-chemical-element [element]="e.tl" [isCanSelect]="canSelectElements.indexOf('tl') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.pb"></mta-chemical-element>
+    <mta-chemical-element [element]="e.pb" [isCanSelect]="canSelectElements.indexOf('pb') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.bi"></mta-chemical-element>
+    <mta-chemical-element [element]="e.bi" [isCanSelect]="canSelectElements.indexOf('bi') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.po"></mta-chemical-element>
+    <mta-chemical-element [element]="e.po" [isCanSelect]="canSelectElements.indexOf('po') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.at"></mta-chemical-element>
+    <mta-chemical-element [element]="e.at" [isCanSelect]="canSelectElements.indexOf('at') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.rn"></mta-chemical-element>
+    <mta-chemical-element [element]="e.rn" [isCanSelect]="canSelectElements.indexOf('rn') < 0"></mta-chemical-element>
   </div>
 </div>
 <div class="container">
   <div class="item">
-    <mta-chemical-element [element]="e.fr"></mta-chemical-element>
+    <mta-chemical-element [element]="e.fr" [isCanSelect]="canSelectElements.indexOf('fr') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.ra"></mta-chemical-element>
+    <mta-chemical-element [element]="e.ra" [isCanSelect]="canSelectElements.indexOf('ra') < 0"></mta-chemical-element>
   </div>
   <div class="item">
     <!-- <paper-card class="actinide">**</paper-card> -->
@@ -368,49 +368,49 @@
   <div class="item"></div>
   <div class="item"></div>
   <div class="item">
-    <mta-chemical-element [element]="e.la"></mta-chemical-element>
+    <mta-chemical-element [element]="e.la" [isCanSelect]="canSelectElements.indexOf('la') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.ce"></mta-chemical-element>
+    <mta-chemical-element [element]="e.ce" [isCanSelect]="canSelectElements.indexOf('ce') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.pr"></mta-chemical-element>
+    <mta-chemical-element [element]="e.pr" [isCanSelect]="canSelectElements.indexOf('pr') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.nd"></mta-chemical-element>
+    <mta-chemical-element [element]="e.nd" [isCanSelect]="canSelectElements.indexOf('nd') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.pm"></mta-chemical-element>
+    <mta-chemical-element [element]="e.pm" [isCanSelect]="canSelectElements.indexOf('pm') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.sm"></mta-chemical-element>
+    <mta-chemical-element [element]="e.sm" [isCanSelect]="canSelectElements.indexOf('sm') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.eu"></mta-chemical-element>
+    <mta-chemical-element [element]="e.eu" [isCanSelect]="canSelectElements.indexOf('eu') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.gd"></mta-chemical-element>
+    <mta-chemical-element [element]="e.gd" [isCanSelect]="canSelectElements.indexOf('gd') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.tb"></mta-chemical-element>
+    <mta-chemical-element [element]="e.tb" [isCanSelect]="canSelectElements.indexOf('tb') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.dy"></mta-chemical-element>
+    <mta-chemical-element [element]="e.dy" [isCanSelect]="canSelectElements.indexOf('dy') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.ho"></mta-chemical-element>
+    <mta-chemical-element [element]="e.ho" [isCanSelect]="canSelectElements.indexOf('ho') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.er"></mta-chemical-element>
+    <mta-chemical-element [element]="e.er" [isCanSelect]="canSelectElements.indexOf('er') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.tm"></mta-chemical-element>
+    <mta-chemical-element [element]="e.tm" [isCanSelect]="canSelectElements.indexOf('tm') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.yb"></mta-chemical-element>
+    <mta-chemical-element [element]="e.yb" [isCanSelect]="canSelectElements.indexOf('yb') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.lu"></mta-chemical-element>
+    <mta-chemical-element [element]="e.lu" [isCanSelect]="canSelectElements.indexOf('lu') < 0"></mta-chemical-element>
   </div>
 </div>
 
@@ -419,48 +419,48 @@
   <div class="item"></div>
   <div class="item"></div>
   <div class="item">
-    <mta-chemical-element [element]="e.ac"></mta-chemical-element>
+    <mta-chemical-element [element]="e.ac" [isCanSelect]="canSelectElements.indexOf('ac') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.th"></mta-chemical-element>
+    <mta-chemical-element [element]="e.th" [isCanSelect]="canSelectElements.indexOf('th') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.pa"></mta-chemical-element>
+    <mta-chemical-element [element]="e.pa" [isCanSelect]="canSelectElements.indexOf('pa') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.u"></mta-chemical-element>
+    <mta-chemical-element [element]="e.u" [isCanSelect]="canSelectElements.indexOf('u') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.np"></mta-chemical-element>
+    <mta-chemical-element [element]="e.np" [isCanSelect]="canSelectElements.indexOf('np') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.pu"></mta-chemical-element>
+    <mta-chemical-element [element]="e.pu" [isCanSelect]="canSelectElements.indexOf('pu') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.am"></mta-chemical-element>
+    <mta-chemical-element [element]="e.am" [isCanSelect]="canSelectElements.indexOf('am') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.cm"></mta-chemical-element>
+    <mta-chemical-element [element]="e.cm" [isCanSelect]="canSelectElements.indexOf('cm') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.bk"></mta-chemical-element>
+    <mta-chemical-element [element]="e.bk" [isCanSelect]="canSelectElements.indexOf('bk') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.cf"></mta-chemical-element>
+    <mta-chemical-element [element]="e.cf" [isCanSelect]="canSelectElements.indexOf('cf') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.es"></mta-chemical-element>
+    <mta-chemical-element [element]="e.es" [isCanSelect]="canSelectElements.indexOf('es') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.fm"></mta-chemical-element>
+    <mta-chemical-element [element]="e.fm" [isCanSelect]="canSelectElements.indexOf('fm') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.md"></mta-chemical-element>
+    <mta-chemical-element [element]="e.md" [isCanSelect]="canSelectElements.indexOf('md') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.no"></mta-chemical-element>
+    <mta-chemical-element [element]="e.no" [isCanSelect]="canSelectElements.indexOf('no') < 0"></mta-chemical-element>
   </div>
   <div class="item">
-    <mta-chemical-element [element]="e.lr"></mta-chemical-element>
+    <mta-chemical-element [element]="e.lr" [isCanSelect]="canSelectElements.indexOf('lr') < 0"></mta-chemical-element>
   </div>
 </div>

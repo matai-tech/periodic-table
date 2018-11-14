@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, Input, Output, EventEmitter, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnChanges, HostListener, Input, Output, EventEmitter, OnDestroy } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { elements } from './assets/chemical-elements';
 import { MtaPeriodicTableService } from './periodic-table.service';
@@ -38,9 +38,10 @@ import { ChemicalElement } from './interface';
   }
   `]
 })
-export class MtaPeriodicTableComponent implements OnInit, OnDestroy {
-  @Input() isShowElDetail: boolean = true;
-  @Input() maxSelect: number;
+export class MtaPeriodicTableComponent implements OnInit, OnChanges,  OnDestroy {
+  @Input() isShowElDetail = true; // 是否展示元素详情
+  @Input() maxSelect: number; // 最大可以选择元素的个数
+  @Input() canSelectElements; // 关联可以选择的元素string[],例['h', 'li', 'be']
 
   e = elements;
   change$: Subscription;
@@ -52,14 +53,32 @@ export class MtaPeriodicTableComponent implements OnInit, OnDestroy {
   @Output() elementChange: EventEmitter<object> = new EventEmitter();
 
   ngOnInit(): void {
-    this.service.maxElLength = this.maxSelect;
+    this.service.setMaxLength(this.maxSelect);
     this.change$ = this.service.elementChange$.subscribe((e: ChemicalElement) => {
       this.elementChange.emit(e);
     });
+  }
+
+  ngOnChanges(): void {
+    this.initCanSelect();
+    this.service.setCanSelectElements(this.canSelectElements.concat(this.service.selectedElements));
   }
 
   ngOnDestroy(): void {
     this.change$.unsubscribe();
   }
 
+  /**
+  * 如果不传入或为不为数组，初始化canSelectElements
+  */
+  initCanSelect () {
+    if (this.canSelectElements === undefined || !(this.canSelectElements instanceof Array)) {
+      this.canSelectElements = [];
+      for (const key in this.e) {
+        if (key) {
+          this.canSelectElements.push(key);
+        }
+      }
+    }
+  }
 }
