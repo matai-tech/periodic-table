@@ -38,6 +38,13 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 ```
 
+## Input params
+```ts
+@Input() isShowElDetail: boolean // 是否展示元素详情, default: true
+@Input() maxSelect: number; // 最大可以选择元素的个数
+@Input() canSelectElements: string[]; // 关联可以选择的元素string[],例['h', 'li', 'be']
+```
+
 ```html
 <mta-periodic-table></mta-periodic-table>
 ```
