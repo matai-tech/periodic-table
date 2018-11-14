@@ -30,7 +30,7 @@ let nextVersion;
 fetchOlderVersions();
 changeVersion();
 generatingPublishNote();
-preRelease();
+// preRelease();
 checkout();
 
 // publish();
