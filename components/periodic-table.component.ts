@@ -60,19 +60,6 @@ export class MtaPeriodicTableComponent implements OnInit, OnChanges,  OnDestroy 
   }
 
   ngOnChanges(): void {
-    this.initCanSelect();
-    this.canSelectElements = this.canSelectElements.concat(this.service.selectedElements);
-    this.service.setCanSelectElements(this.canSelectElements);
-  }
-
-  ngOnDestroy(): void {
-    this.change$.unsubscribe();
-  }
-
-  /**
-  * 如果不传入或为不为数组，初始化canSelectElements
-  */
-  initCanSelect () {
     if (this.canSelectElements === undefined || !(this.canSelectElements instanceof Array)) {
       this.canSelectElements = [];
       for (const key in this.e) {
@@ -80,6 +67,19 @@ export class MtaPeriodicTableComponent implements OnInit, OnChanges,  OnDestroy 
           this.canSelectElements.push(key);
         }
       }
+    } else {
+      this.canSelectElements = this.canSelectElements.concat(this.service.selectedElements);
+      const arr = [];
+      for (const item of this.canSelectElements) {
+        arr.push(item.toLocaleLowerCase());
+      }
+      this.canSelectElements = arr;
     }
+    this.service.setCanSelectElements(this.canSelectElements);
   }
+
+  ngOnDestroy(): void {
+    this.change$.unsubscribe();
+  }
+
 }

@@ -18,17 +18,11 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.canSelectElements = undefined;
     setTimeout( () => {
-      this.canSelectElements = ['am'];
-    }, 1000);
+      this.canSelectElements = ['AM'];
+    }, 5000);
     setTimeout( () => {
-      this.canSelectElements = ['si'];
-    }, 2000);
-    setTimeout( () => {
-      this.canSelectElements = ['be'];
-    }, 3000);
-    setTimeout( () => {
-      this.canSelectElements = ['he'];
-    }, 4000);
+      this.canSelectElements = ['SI'];
+    }, 10000);
   }
 
   aaa(e) {
