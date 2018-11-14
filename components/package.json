@@ -1,6 +1,6 @@
 {
   "name": "mta-periodic-table",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "description": "a periodic-table component by angular",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
