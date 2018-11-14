@@ -37,15 +37,17 @@ import { MtaPeriodicTableService } from '../periodic-table.service';
     font-family: sans-serif;
     color: white;
     text-align: center;
-    cursor: pointer;
     box-sizing: border-box;
     border: 1px solid transparent;
     border-radius: 2px;
     transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.08), 0 3px 1px -2px rgba(0, 0, 0, 0.05);
   }
+  .element-card:not(.noSelect) {
+    cursor: pointer;
+  }
   .element-card.active,
-  .element-card:hover {
+  .element-card:not(.noSelect):hover {
     border-color: #333;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
       0 1px 10px 0 rgba(0, 0, 0, 0.12),
@@ -91,11 +93,15 @@ import { MtaPeriodicTableService } from '../periodic-table.service';
       0 3px 14px 2px rgba(0, 0, 0, 0.12),
       0 5px 5px -3px rgba(0, 0, 0, 0.4);
   }
+  .noSelect {
+    background-color: #eee;
+  }
   `]
 })
 export class MtaChemicalElementComponent implements OnInit {
   @Input() element: ChemicalElement;
   @Input() group: string;
+  @Input() isCanSelect: boolean;
 
   @HostListener('click', [ '$event' ])
   onTriggerClick(event: MouseEvent): void {

@@ -1,6 +1,7 @@
 <div 
   class="element-card"
   [class.active]="isSelected()"
+  [class.noSelect]="isCanSelect"
   [ngClass]="element.group"
 >
   {{ element.symbol }}
