@@ -1,3 +1,7 @@
+# [0.4.0](https://github.com/matai-tech/periodic-table/compare/0.3.3...0.4.0) (2018-11-14)
+
+
+
 ## [0.3.3](https://github.com/matai-tech/periodic-table/compare/0.3.2...0.3.3) (2018-11-14)
 
 ### Bug Fixes
