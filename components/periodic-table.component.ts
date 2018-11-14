@@ -61,7 +61,8 @@ export class MtaPeriodicTableComponent implements OnInit, OnChanges,  OnDestroy 
 
   ngOnChanges(): void {
     this.initCanSelect();
-    this.service.setCanSelectElements(this.canSelectElements.concat(this.service.selectedElements));
+    this.canSelectElements = this.canSelectElements.concat(this.service.selectedElements);
+    this.service.setCanSelectElements(this.canSelectElements);
   }
 
   ngOnDestroy(): void {
