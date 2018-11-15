@@ -1,5 +1,8 @@
 # [0.4.0](https://github.com/matai-tech/periodic-table/compare/0.3.3...0.4.0) (2018-11-14)
 
+### Bug Fixes
+
+* toggle case ([#13](https://github.com/matai-tech/periodic-table/issues/13)) ([6d896f4](https://github.com/matai-tech/periodic-table/commit/6d896f4))
 
 
 ## [0.3.3](https://github.com/matai-tech/periodic-table/compare/0.3.2...0.3.3) (2018-11-14)
